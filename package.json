@@ -1,0 +1,36 @@
+{
+  "name": "comlink-async-generator",
+  "version": "0.0.1",
+  "description": "Generator functions support for Comlink",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "prebuild": "rimraf ./dist",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyawswarthwin/comlink-async-generator.git"
+  },
+  "keywords": [
+    "comlink",
+    "async",
+    "generator"
+  ],
+  "author": "Kyaw Swar Thwin <myanmarunicorn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kyawswarthwin/comlink-async-generator/issues"
+  },
+  "homepage": "https://github.com/kyawswarthwin/comlink-async-generator#readme",
+  "dependencies": {
+    "comlink": "^4"
+  },
+  "devDependencies": {
+    "rimraf": "^5.0.5",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2"
+  }
+}
